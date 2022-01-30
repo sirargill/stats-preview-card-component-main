@@ -1,0 +1,123 @@
+:root{
+    --main-heading-color: hsl(0, 0%, 100%);
+    --main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+    --main-number-color: hsla(0, 0%, 100%, 0.6);
+
+    --main-background-color: hsl(233, 47%, 7%);
+    --main-card-color: hsl(244, 38%, 16%);
+    --main-image-color: hsl(277, 64%, 61%);
+    --main-image-color-transparent: hsl(277, 64%, 61%, 0.6);
+}
+
+
+
+body{
+    
+    background-color: var(--main-background-color);
+    text-align: center;
+    /* display: flex; */
+}
+
+span{
+    color: var(--main-image-color);
+}
+
+.container{
+    background-color: var(--main-card-color);
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+    border-radius: 2%;
+    padding: 20px;
+
+}
+
+.img-mobile{
+   
+    background-color: var(--main-image-color-transparent);
+    width: 80%;
+}
+
+h1{
+    color: var(--main-heading-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.paragraph{
+    color: var(--main-paragraph-color);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.number-after{
+    color: var(--main-number-color);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+    
+    .container{
+        margin-top: auto;
+        width: 40%;
+        text-align: left;
+        padding: 50px;
+        margin-right: 0px;
+        border-radius: 2% 0% 0% 2%;
+        
+    }
+
+    .paragraph{
+        margin-right: 150px;
+    }
+   
+    .top-heading{
+        margin-right: 160px;
+    }
+    .img-mobile{
+        display: none;
+    }
+    
+    .number{
+        display: flex;
+        justify-content: left;
+
+    }
+
+    .number-size{
+        font-size: 25px;
+    }
+
+    .number-inside{
+        /* margin: 0px 3rem; */
+        margin-right: 100px;
+        line-height: 1rem;
+    }
+
+    .number-after{
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .flex-image{
+        display: flex;
+        margin-top: 100px
+
+    }
+
+    .img-large{
+        width: 400px;
+        margin-right: auto;
+        border-radius: 0% 2% 2% 0%;
+        /* margin-top: 51px; */
+        
+    }
+}
+
+
+/* for not showing desktop image */
+@media screen and (max-width:900px){
+    .img-large{
+        display: none;
+    }
+}
